@@ -96,6 +96,7 @@ ul{
     align-items: center;
     gap: 40px;
     justify-content: center;
+    position: relative;
 }
 
 .nav-link{
@@ -106,12 +107,14 @@ ul{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .nav-link:hover,
 .nav-link:focus {
     color: var(--c-brand);
 }
 
+.nav-link:hover::before,
 .nav-link:hover::after{
     content: '';
     position: absolute;
@@ -332,6 +335,11 @@ ul{
     margin-right: 120px;
 }
 
+.footer-inner{
+    display:flex;
+    align-items: baseline;
+}
+
 .logo-footer {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
@@ -354,7 +362,7 @@ ul{
     letter-spacing: 0.02em;
 }
 
-.social-text{
+.social-media-title{
     color: var(--c-primary-light);
     font-family: 'Roboto';
     font-size: 16px;
@@ -362,4 +370,5 @@ ul{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
