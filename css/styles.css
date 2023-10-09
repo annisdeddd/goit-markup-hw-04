@@ -262,6 +262,26 @@ ul{
     padding: 32px 0;
     text-align: center;
 }
+
+.team-social-list{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-social-link:hover,
+.team-social-link:focus{
+    background-color: var(--c-brand);
+}
+
+.team-social-icon{
+    color: var(--c-background-light);
+    background-color: var(--c-brand);
+    fill: var(--c-primary-light);
+    width: 16px;
+    height: 16px;
+}
+
 .name-title{
     color: var(--c-primary);
         font-size: 20px;
