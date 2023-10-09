@@ -269,6 +269,16 @@ ul{
     justify-content: center;
 }
 
+.team-social-link{
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-logo);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .team-social-link:hover,
 .team-social-link:focus{
     background-color: var(--c-brand);
@@ -278,8 +288,6 @@ ul{
     color: var(--c-background-light);
     background-color: var(--c-brand);
     fill: var(--c-primary-light);
-    width: 16px;
-    height: 16px;
 }
 
 .name-title{
