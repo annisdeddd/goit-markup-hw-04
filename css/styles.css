@@ -6,6 +6,7 @@
    --c-logo: #4D5AE5;
    --c-text:#434455;
    --c-border:#e7e9fc;
+   --c-social-hover:#31d0aa;
 }
 /* Base */
 body{
@@ -373,5 +374,17 @@ ul{
 .social-media-list{
     display: flex;
     gap:16px;
+}
 
+.social-icon{
+    background-color: var(--c-logo);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.social-icon:hover,
+.social-icon:focus{
+    background-color:var(--c-social-hover);
 }
