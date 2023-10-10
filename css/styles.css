@@ -212,6 +212,7 @@ ul{
 
 .advantage-icon{
     display: flex;
+    height: 112px;
     border-radius: 4px;
     border: 1px solid var(--c-border);
     background-color:var(--c-background-light);
@@ -300,6 +301,8 @@ ul{
 .team-social-icon{
     background-color: var(--c-brand);
     fill: var(--c-background-light);
+    width: 40px;
+    height: 40px;
 }
 
 .name-title{
@@ -436,7 +439,9 @@ ul{
 .social-icon{
     background-color: var(--c-logo);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill:var(--c-background-light)
+    fill:var(--c-background-light);
+    width: 40px;
+    height: 40px;
 }
 
 .social-media-link:hover,
