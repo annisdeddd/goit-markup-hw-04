@@ -208,6 +208,7 @@ ul{
 }
 
 .advantage-icon{
+    display: flex;
     border-radius: 4px;
     border: 1px solid var(--c-border);
     background-color:var(--c-background-light);
