@@ -7,6 +7,7 @@
    --c-text:#434455;
    --c-border:#e7e9fc;
    --c-social-hover:#31d0aa;
+   --c-border:#8E8F99;
 }
 /* Base */
 body{
@@ -113,14 +114,13 @@ ul{
     color: var(--c-brand);
 }
 
-.nav-link:hover::after{
-    content: '';
+
+.nav-link:hover:after{
     position: absolute;
+    content: '';
+    background-color: var(--c-brand);
     width:48px;
     height: 4px;
-    background-color: var(--c-brand);
-    left:0;
-    bottom: -1px;
     border-radius: 2px;
 
 }
@@ -159,7 +159,6 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-title{
     max-width: 496px;
@@ -187,6 +186,7 @@ ul{
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus{
@@ -205,6 +205,15 @@ ul{
 
 .advantage-category{
     width:calc((100% - 72px)/4);
+}
+
+.advantage-icon{
+    border-radius: 4px;
+    border: 1px solid var(--c-border);
+    background-color:var(--c-background-light);
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .advantage-title{
@@ -285,9 +294,8 @@ ul{
 }
 
 .team-social-icon{
-    color: var(--c-background-light);
     background-color: var(--c-brand);
-    fill: var(--c-primary-light);
+    fill: var(--c-background-light);
 }
 
 .name-title{
