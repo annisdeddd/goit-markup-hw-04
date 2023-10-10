@@ -101,6 +101,7 @@ ul{
 }
 
 .nav-link{
+    position: relative;
     display: inline-block;
     padding: 24px 0;
     color:var(--c-primary);
@@ -116,13 +117,14 @@ ul{
 }
 
 .nav-link:hover::after{
-    position: relative;
+    position: absolute;
     content: '';
     background-color: var(--c-brand);
     width:48px;
     height: 4px;
     border-radius: 2px;
-
+    left: 0;
+    bottom: -1px;
 }
 
 .address{
