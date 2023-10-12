@@ -211,6 +211,7 @@ ul{
 }
 
 .advantage-icon{
+    display: flex;
     height: 112px;
     border-radius: 4px;
     border: 1px solid var(--c-border);
@@ -283,6 +284,7 @@ ul{
 }
 
 .team-social-link{
+    display: flex;
     width: 100%;
     height: 100%;
     background-color: var(--c-logo);
@@ -341,6 +343,10 @@ ul{
 .portfolio-card{
     position: relative;
     overflow: hidden;
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card:first-child {
@@ -359,7 +365,7 @@ ul{
 }
 
 .portfolio-card:hover .overlay{
-    transform: translateY(0);
+    transform: translateY(0%);
 
 }
 
@@ -459,6 +465,7 @@ ul{
 }
 
 .footer-socials-link{
+    display: flex;
     width: 100%;
     height: 100%;
     background-color: var(--c-logo);
