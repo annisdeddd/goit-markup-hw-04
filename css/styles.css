@@ -304,9 +304,9 @@ ul{
 .team-social-icon{
     background-color: var(--c-brand);
     fill: var(--c-background-light);
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     flex-shrink: 0;
 }
 
@@ -358,11 +358,15 @@ ul{
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-card:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+        ;
+}
+
 .portfolio-card:hover .portfolio-text{
     transform: translateY(0%);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
 .portfolio-text{
