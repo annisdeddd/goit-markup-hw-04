@@ -346,12 +346,12 @@ ul{
 }
 
 .portfolio-overlay-container{
-    position: relative;
-    overflow: hidden;
+    position: relative;    overflow: hidden;
 }
 
 .portfolio-card{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .portfolio-card:first-child {
@@ -384,7 +384,7 @@ ul{
     letter-spacing: 0.02em;
     padding: 40px 32px;
     align-content: center;
-    border-top: none;
+    margin-top:0;
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -453,7 +453,6 @@ ul{
     color: var(--c-primary-light);
     font-family: 'Roboto';
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
